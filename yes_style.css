@@ -1,0 +1,65 @@
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1c0e8;
+}
+
+.header_text {
+    font-family: 'Caprasimo', serif;
+    font-size: 80px;
+    font-weight: 800; 
+    color: whitesmoke; 
+    text-align: center;
+    margin: 0; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.header_text::after{
+    content: attr(data-outline); 
+    position: absolute; 
+     inset: 0 0 0 0; 
+     text-align: center; 
+     -webkit-text-stroke-width: 2px; 
+     -webkit-text-fill-color: transparent; 
+     -webkit-text-stroke-color: #b9d6f2; 
+     z-index: 1; 
+     pointer-events: none; 
+
+}
+
+.gif_container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn {
+    background-color: fuchsia;
+    font-family: 'Caprasimo', serif; 
+    color: whitesmoke;
+    padding: 32px 32px; 
+    text-align: center; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 12px; 
+    transition: background-color 0.2s ease; 
+}
+
+.btn:hover{
+    background-color: #b9d6f2;
+}
+
+.playButton {
+   position: absolute; 
+   bottom: 40px; 
+   left: 50%; 
+   transform: translateX(-50%); 
+
+}
+

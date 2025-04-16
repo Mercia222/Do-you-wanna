@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale:1.0" />
+        <title>Secret Invite 💌</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+        <h1 class="headtext" data-outline="Secret Invite 💌">Secret Invite 💌 </h1>
+        <div class="gif">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2JpZjBtcnFvaDdtOTV0OW1kYTRqZGU4eTJyYWd4YTcycTR0aGg4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hqb8LwPS2xCNCpWH8/giphy.gif" alt="inlove illustration">
+        </div>
+
+        <p class="outline-text" data-outline="Enter the special emoji to continue ... 😏">Enter the special emoji to continue ... 😏 </p>
+        <input type="text" id="emojiInput" placeholder="Type it here 😏">
+        <div class="button">
+        <button onclick="checkEmoji()"> ✨Unlock✨ </button>
+        <div class="error" id="errorMessage"> Nope 💀 Dust yourself off and try again! 💪
+        </div>
+        </div>
+
+        <script>
+
+        function checkEmoji() {
+            const input = document.getElementById('emojiInput').value.trim();
+            const errorMessage = document.getElementById('errorMessage'); 
+            if (input ==='😏') {
+                window.location.href = 'main.html'; 
+            } else {
+                errorMessage.style.display ='block';
+            }
+        }
+        </script>
+    </body>
+</html>

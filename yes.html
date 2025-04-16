@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="./yes_style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet
+
+        </head>
+        <body>
+            <div class="container">
+                    <h1 class="header_text" data-outline="✨Yaaaaasssss!!✨">✨Yaaaaasssss!!✨</h1>
+    
+                <div class="gif_container">
+                    <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+                </div>
+        <!-- Play/Stop Button -->
+                <div class="playButton">
+                    <button id="surpriseBtn" class="btn"> Click to reveal surprise 🧧</button>
+                </div>
+            
+
+        <!-- Love sound -->
+        <audio id="LoveSound" src="Love-Sound.mp3" preload="auto"></audio>
+
+        <script>
+            const button = document.getElementById("surpriseBtn"); 
+            const audio = document.getElementById("LoveSound"); 
+            let isPlaying = false; 
+
+            button.addEventListener("click", () => {
+                if (!isPlaying) {
+                    audio.play(); 
+                    isPlaying = true; 
+                    button.textContent = "Stop the Love Sound 💔";
+                } else {
+                    audio.pause(); 
+                    audio.currentTime = 0; 
+                    isPlaying = false; 
+                    button.textContent = "Play surprise again 💝";
+                }
+            });
+
+        </script>
+       
+    </div>
+        
+        </body>
+    </html>
