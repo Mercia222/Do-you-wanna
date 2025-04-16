@@ -15,4 +15,4 @@ Add a custom message or poem on the Yes page Replace GIFs with your own memories
 
 This was made just for fun (and maybe for love too). Spread the romance, write love-powedered code.
 
-Link: ✨lovedeployed.netlify.app✨
+Link: ✨https://lovedeployed.netlify.app✨
